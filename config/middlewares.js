@@ -5,7 +5,10 @@ module.exports = [
   {
     name: "strapi::cors",
     config: {
-      origin: ["http://localhost:5173"],
+      origin: [
+        "http://localhost:5173",
+        "https://travel-guide-frontend-eight.vercel.app",
+      ],
       methods: ["GET", "POST", "PUT", "DELETE"],
       headers: ["Content-Type", "Authorization"],
       credentials: true,
